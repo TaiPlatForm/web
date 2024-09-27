@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân</title>
+    <style>
+        /* Toàn bộ trang */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Menu chính */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        /* Nội dung */
+        section {
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .tab-content {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Phần nội dung Lab1 */
+        nav.lab-menu {
+            background-color: #4caf50;
+            overflow: hidden;
+        }
+
+        nav.lab-menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        nav.lab-menu a:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>
+        Blog của Tài</h1>
+</header>
+
+<!-- Menu chính -->
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#lab1">Lab1</a>
+</nav>
+
+<!-- Phần About Me -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Xin chào! Tôi là Tài, sinh viên đang theo học môn Công Nghệ Thông Tin. </p>
+    <p1>Đây là website cá nhân của tôi, nơi tôi chia sẻ về học tập và các dự án thực hành của mình.</p1>
+</section>
+
+<!-- Phần Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+    <p>Tôi đã thực hiện nhiều dự án nhỏ trong quá trình học tập và nghiên cứu: </p>
+    <ul>
+        <li>Dự án quản lý sở thú</li>
+        <li>.....................</li>
+ 
+    </ul>
+</section>
+
+<!-- Phần Lab1 -->
+<section id="lab1">
+    <h2>Lab1 - Quản Lý Đối Tượng</h2>
+
+    <!-- Menu Lab1 -->
+    <nav class="lab-menu">
+        <a href="#requirement">Requirement</a>
+        <a href="#design">Design</a>
+        <a href="#implement">Implement</a>
+    </nav>
+
+    <!-- Tab Requirement -->
+    <div id="requirement" class="tab-content">
+        <h3>Requirement</h3>
+        <p>Thiết kế chức năng Quản lý đối tượng bao gồm các tính năng: <strong>thêm, sửa, xóa, tìm kiếm</strong> cho đối tượng đã chọn. Ví dụ, quản lý đối tượng sinh viên, bao gồm các trường thông tin như <em>tên, tuổi, địa chỉ, lớp học</em>, và các thao tác thêm, sửa, xóa và tìm kiếm thông tin sinh viên.</p
+    </div>
+
+    <!-- Tab Design -->
+    <div id="design" class="tab-content">
+        <h3>Design</h3>
+        <p>Thiết kế trên giấy và màn hình đã thực hiện:</p>
+        <div class="image-container">
+            <a href="vetayhtml.png" target="_blank">
+                <img src="vetayhtml.png" alt="Thiết kế trên giấy">
+            </a>
+            <p>Thiết kế trên giấy (Nhấp vào để xem hình lớn)</p>
+        </div>
+        
+        <div class="image-container">
+            <a href="thietkehtml.png">
+                <img src="thietkehtml.png" alt="thietkehtml" border="0" /></a>
+            
+
+            <p>Thiết kế HTML (Nhấp vào để xem hình lớn)</p>
+        </div>
+    </div>
+
+    <!-- Tab Implement -->
+    <div id="implement" class="tab-content">
+        <h3>Implement</h3>
+        <p>Đây là trang HTML cho chức năng Quản lý Sở thú:</p>
+        <a href="index.html" target="_blank">Xem trang Quản lý Sở thú</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Tài - Trang Cá Nhân</p>
+</footer>
+
+</body>
+</html>

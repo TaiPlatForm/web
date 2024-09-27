@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1 - Quản Lý Đối Tượng</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            margin-top: 0;
+            background-color: #4caf50;
+            color: white;
+        }
+
+        nav {
+            background-color: #4caf50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        .tab-content {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Menu</h1>
+
+<!-- Menu Lab1 -->
+<nav>
+    <a href="#requirement">Requirement</a>
+    <a href="#design">Design</a>
+    <a href="#implement">Implement</a>
+</nav>
+
+<!-- Tab Requirement -->
+<div id="requirement" class="tab-content">
+    <h2>Requirement</h2>
+    <p>Thiết kế chức năng Quản lý đối tượng bao gồm các tính năng: <strong>thêm, sửa, xóa, tìm kiếm</strong> cho đối tượng đã chọn. Ví dụ, quản lý đối tượng sinh viên, bao gồm các trường thông tin như <em>tên, tuổi, địa chỉ, lớp học</em>, và các thao tác thêm, sửa, xóa và tìm kiếm thông tin sinh viên.</p>
+    <p>Bạn cũng có thể chọn đối tượng quản lý là động vật trong sở thú hoặc sách trong thư viện, với các trường thông tin tương tự phù hợp với đối tượng cụ thể.</p>
+</div>
+
+<!-- Tab Design -->
+<div id="design" class="tab-content">
+    <h2>Design</h2>
+    <p>Thiết kế trên giấy và màn hình đã thực hiện:</p>
+    <div class="image-container">
+        <a href="design-paper.jpg" target="_blank">
+            <img src="design-paper.jpg" alt="Thiết kế trên giấy">
+        </a>
+        <p>Thiết kế trên giấy (Nhấp vào để xem hình lớn)</p>
+    </div>
+    
+    <div class="image-container">
+        <a href="screenshot-html-design.jpg" target="_blank">
+            <img src="screenshot-html-design.jpg" alt="Thiết kế trên HTML">
+        </a>
+        <p>Thiết kế HTML (Nhấp vào để xem hình lớn)</p>
+    </div>
+</div>
+
+<!-- Tab Implement -->
+<div id="implement" class="tab-content">
+    <h2>Implement</h2>
+    <p>Đây là trang HTML cho chức năng Quản lý Sở thú:</p>
+    <a href="index.html" target="_blank">Xem trang Quản lý Sở thú</a>
+</div>
+
+</body>
+</html>
