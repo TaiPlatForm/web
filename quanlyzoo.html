@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sở Thú</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px;
+            margin-top: 0;
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        form input[type="text"], form input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 48%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #388e3c;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        td button {
+            padding: 5px 10px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        td button:hover {
+            background-color: #e64a19;
+        }
+
+        #search {
+            padding: 10px;
+            font-size: 16px;
+            width: calc(100% - 120px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #search + button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #search + button:hover {
+            background-color: #388e3c;
+        }
+
+        .table-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hệ Thống Quản Lý Sở Thú</h1>
+
+    <div class="container">
+        <!-- Form thêm động vật -->
+        <h2>Thêm Động Vật</h2>
+        <form id="animalForm">
+            <input type="text" id="animalName" placeholder="Tên động vật" required>
+            <input type="text" id="animalType" placeholder="Loại động vật (Ví dụ: Thú, Chim...)" required>
+            <input type="number" id="animalAge" placeholder="Số Lượng" required>
+            <input type="text" id="animalHabitat" placeholder="Môi trường sống" required>
+            <button type="submit">Thêm Động Vật</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <!-- Tìm kiếm động vật -->
+        <h2>Tìm kiếm Động Vật</h2>
+        <input type="text" id="search" placeholder="Tìm kiếm theo tên, loại hoặc môi trường sống">
+        <button onclick="searchAnimal()">Tìm kiếm</button>
+    </div>
+
+    <div class="container table-container">
+        <!-- Hiển thị danh sách động vật -->
+        <h2>Danh sách Động Vật</h2>
+        <table id="animalTable">
+            <thead>
+                <tr>
+                    <th>Tên Động Vật</th>
+                    <th>Loại</th>
+                    <th>Số Lượng</th>
+                    <th>Môi Trường Sống</th>
+                    <th>Hành Động</th>
+                </tr>
+            </thead>
+            <tbody id="animalList">
+                <!-- Danh sách động vật sẽ được thêm vào đây -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="zoo.js"></script>
+</body>
+</html>
